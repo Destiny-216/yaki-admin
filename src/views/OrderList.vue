@@ -213,10 +213,10 @@
   
 	  if (!json.ok) throw new Error(json.error || "orders api error");
 	  orders.value = Array.isArray(json.data) ? json.data : [];
-	} catch (e) {
-	  console.error(e);
-	  ElMessage.error("注文の読み込みに失敗しました：" + (e?.message || "unknown"));
-	} finally {
+	}catch (e) {
+		ElMessage.info("デモ環境ではデータは表示されません")
+		data.value = []
+	}finally {
 	  loading.value = false;
 	}
   }

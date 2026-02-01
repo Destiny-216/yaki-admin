@@ -1,6 +1,5 @@
 <template>
 	<div class="menu-page">
-	  <!-- 顶部工具栏 -->
 	  <!-- 検索・フィルタリングツールバー -->
 	  <div class="toolbar">
 		<div class="left">
@@ -46,7 +45,6 @@
 		</div>
 	  </div>
   
-	  <!-- 表格 -->
 	  <!-- メニュー商品一覧テーブル -->
 	  <el-table
 		:data="items"
@@ -252,9 +250,9 @@
 	  if (!json.ok) throw new Error(json.error || "categories api error");
 	  categories.value = json.data || [];
 	} catch (e) {
-	  console.error(e);
-	  ElMessage.error("カテゴリの読み込みに失敗しました：" + e.message);
-	}
+		ElMessage.info("デモ環境ではデータは表示されません")
+		data.value = []
+		}
   }
   
   // 商品一覧取得API（検索条件付き）
