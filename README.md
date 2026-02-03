@@ -76,8 +76,9 @@ Vue 3 と Element Plus を使用して構築された、
 - フロントエンド／バックエンド分離構成
 - 管理画面（SPA）＋ API サーバー
 
-🔗 **Demo**  
-https://yaki-admin.vercel.app/dashboard
+🔗 Demo  
+[Admin Dashboard（Vercel）](https://yaki-admin.vercel.app/dashboard)
+
 
 ------
 
