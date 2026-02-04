@@ -20,7 +20,6 @@
 		</div>
 	  </div>
   
-	  <!-- 统计卡片 -->
 	  <!-- KPI表示カードエリア -->
 	  <el-row :gutter="16" style="margin-top: 16px">
 		<el-col :span="6">
@@ -79,7 +78,6 @@
 		</div>
   
 		<div class="panel-body">
-		  <!-- ECharts 有就画图，没有就降级显示表格 -->
 		  <div v-if="chartSupported" ref="chartRef" class="chart-box"></div>
   
 		  <div v-else class="fallback">
@@ -304,7 +302,6 @@
 	}));
   });
   
-  /** ------- グラフ：echarts（オプション） ------- */
   // EChartsライブラリを使用したグラフ描画処理
   const chartRef = ref(null);
   let chartInstance = null;
