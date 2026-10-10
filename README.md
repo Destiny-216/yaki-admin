@@ -127,8 +127,6 @@ Vercel 上のデモ環境では、フロントエンド（画面・業務フロ�
 デモ URL  
 ・[https://yaki-admin.vercel.app/](https://yaki-admin.vercel.app/)
 
-動作デモ (Demo Video)
-・https://drive.google.com/file/d/1CIx8BYPpmv3NVHTNFBmOQR74AWpS-Owy/view?usp=drive_link
 
 
 ローカルでの動作（フル機能）  
